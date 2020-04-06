@@ -50,7 +50,7 @@ namespace HardwareDemo
         {
             var output = "";
 
-            var info = new ProcessStartInfo();
+            var info = new ProcessStartInfo("top");
             info.FileName = "/bin/bash";
             info.Arguments = "top";
             info.RedirectStandardOutput = true;
