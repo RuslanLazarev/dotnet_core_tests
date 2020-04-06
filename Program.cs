@@ -65,7 +65,7 @@ namespace HardwareDemo
 
             var lines = output.Split("\n");
             var memory = lines[2].Split(" ", StringSplitOptions.RemoveEmptyEntries);
-            Console.WriteLine(memory[0].ToString());
+            Console.WriteLine(memory[4].ToString());
 
             return 0;
         }
