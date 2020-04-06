@@ -55,7 +55,7 @@ namespace HardwareDemo
             info.Arguments = "-c \"top -b -n 1\"";
             info.RedirectStandardOutput = true;
             info.UseShellExecute = false;
-            info.CreateNoWindow = true;
+            //info.CreateNoWindow = true;
 
             using (var process = Process.Start(info))
             {
