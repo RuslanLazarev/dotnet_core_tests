@@ -54,7 +54,7 @@ namespace HardwareDemo
             info.FileName = "/bin/bash";
             info.Arguments = "-c \"top -b -n 1\"";
             info.RedirectStandardOutput = true;
-            info.UseShellExecute = false;
+            //info.UseShellExecute = false;
             //info.CreateNoWindow = true;
 
             using (var process = Process.Start(info))
