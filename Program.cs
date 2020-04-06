@@ -50,9 +50,9 @@ namespace HardwareDemo
         {
             var output = "";
 
-            var info = new ProcessStartInfo("top -b");
+            var info = new ProcessStartInfo("top -b -n 1");
             info.FileName = "/bin/bash";
-            info.Arguments = "-c \"top -b\"";
+            info.Arguments = "-c \"top -b -n 1\"";
             info.RedirectStandardOutput = true;
             info.UseShellExecute = false;
             info.CreateNoWindow = true;
