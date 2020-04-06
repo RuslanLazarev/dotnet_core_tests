@@ -60,12 +60,12 @@ namespace HardwareDemo
             using (var process = Process.Start(info))
             {
                 output = process.StandardOutput.ReadToEnd();
-                Console.WriteLine(output);
+                //Console.WriteLine(output);
             }
 
             var lines = output.Split("\n");
             var memory = lines[2].Split(" ", StringSplitOptions.RemoveEmptyEntries);
-            Console.WriteLine(memory);
+            Console.WriteLine(memory.ToString());
 
             return 0;
         }
