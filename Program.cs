@@ -52,7 +52,7 @@ namespace HardwareDemo
 
             var info = new ProcessStartInfo("top");
             info.FileName = "/bin/bash";
-            info.Arguments = "-b -n 1\"top\"";
+            info.Arguments = "-b \"top\"";
             info.RedirectStandardOutput = true;
 
             using (var process = Process.Start(info))
